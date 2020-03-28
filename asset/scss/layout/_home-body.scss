@@ -1,0 +1,142 @@
+.home-body{
+    background: #fff;
+    margin-top: 14rem;
+    overflow: hidden;
+    @include laptop{
+        margin-top: 6rem;
+    }
+
+    @include mobile{
+        margin-top: 6rem;
+    }
+
+    &__banner{
+        min-height: 80rem;
+        position: relative;
+        text-align: right;
+
+        @include laptop{
+            min-height: 70rem;
+        }
+
+        @include mobile{
+            min-height: 65rem;
+        }
+
+        @include small-mobile{
+            min-height: 70rem;
+        }
+
+        
+
+        .bnr_img{
+            width: 65vw;
+            text-align: right;
+
+            @include small-desktop{
+                width: 55vw;
+            }
+
+           @include laptop{
+                width: 65vw;
+            }
+
+            @include tablet{
+                width:85vw;
+                
+            }
+
+            @include small-mobile{
+                width:100vw;
+             
+            }
+
+        }
+        &__container{
+            position: absolute;
+            top: 20%;
+            left: 10rem;
+            max-width: 60rem;
+            text-align: left;
+
+             @include laptop{
+                left:6rem;
+            }
+            @include tablet{
+                left:4rem;
+                max-width: 48rem;
+            }
+
+            @include mobile{
+                left:0rem;
+                padding:0 1.5rem;
+            }
+
+            @include laptop{
+                top:10%;
+            }
+
+            @include tablet{
+                top:12%;
+            }
+
+            img{
+                width: 25rem;
+
+                @include tablet{
+                    width: 20rem;
+                }
+
+                @include mobile{
+                    width: 12rem;
+                }
+            }
+
+            h1{
+                font-family: 'Poppins', sans-serif;
+                font-size: 6rem;
+                text-transform: uppercase;
+                font-weight: 900;
+                padding-top: 4rem;
+                color: $color-green;
+                text-shadow: 5px 4px 11px rgba($color-green,0.3);
+
+                @include large-tablet{
+                    font-size: 5rem;
+                }
+                 @include tablet{
+                    font-size: 4rem;
+                }
+            }
+
+            h2{
+          
+                padding-bottom: 2rem;
+                text-transform: uppercase;
+                font-family: 'Caveat',sans-serif;
+                font-weight: 600;
+                color: $primary-main;
+                font-size: 3rem;
+
+                 @include tablet{
+                    font-size: 2.5rem;
+                }
+
+                @include mobile{
+                    font-size: 2rem;
+                }
+            }
+
+            p{
+                color: $primary-heading;
+                font-family: 'Rubik',sans-serif;
+                font-size: 1.6rem;
+            }
+
+            .contact-btn{
+                margin-top: 2rem;
+
+            }
+        }
+    }
+}
