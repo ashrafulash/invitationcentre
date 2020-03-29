@@ -44,14 +44,14 @@
                 if(pos == 0){
                     clearInterval(interval);
                 }else{
-                pos += 3;
+                pos += 4;
                     default_sidebar.style.left = pos + 'px';
                 }
             }, 1);
 
             default_sidebar.setAttribute('data-expand', 'false');
             expand = false;
-            $(".home-body__banner").style.filter = 'blur(7px)';
+            $(".maincontent").style.filter = 'blur(7px)';
         }else if(expand == false){
             default_sidebar.style.left = '-300px';
             var pos = 0;
@@ -59,14 +59,14 @@
                 if(pos == -300){
                     clearInterval(interval);
                 }else{
-                pos -= 3;
+                pos -= 4;
                     default_sidebar.style.left = pos + 'px';
                 }
             }, 1);
             
             default_sidebar.setAttribute('data-expand', 'true');
             expand = true;
-            $(".home-body__banner").style.filter = 'blur(0px)';
+            $(".maincontent").style.filter = 'blur(0px)';
         }
     }
     
