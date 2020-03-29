@@ -1,4 +1,7 @@
 (function(){
+
+    alert('This website is under Development');
+
     function $(selector){
         return document.querySelector(selector);
     }
