@@ -172,7 +172,7 @@
 
         @include mobile{
             padding: 0 1.5rem;
-            text-align: left;
+            text-align: center;
             margin-top: 3rem;
         }
 
@@ -182,12 +182,25 @@
             font-weight: bold;
             color: $color-red;
             padding-bottom: 2.5rem;
+            position: relative;
+            z-index: 0;;
+            &::before{
+                position: absolute;
+                @include equal_round(12rem, 50%);
+                left: -7rem;
+                top: 1rem;
+                content: '';
+                z-index: -1;
+                background: #eff59e;
+            }
         }
 
         p{
             font-size: 1.6rem;
             color: $primary-heading;
             line-height: 2.8rem;
+            z-index: 1;
+            position: relative;
         }
 
 

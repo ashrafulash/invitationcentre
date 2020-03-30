@@ -29,6 +29,10 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- service boxes -->
+                <?php get_template_part('template/home/service-box'); ?>
+                
             </div>
 
         </div>
