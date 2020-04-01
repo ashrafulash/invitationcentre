@@ -96,7 +96,7 @@ a:hover,span:hover,i:hover{text-decoration:none}@media(max-width:1199.98px){#mx-
 @media(max-width:1199.98px){.inner-footer__content a{margin-top:2rem}}@media(max-width:575.98px){.inner-footer__content a{margin-top:0}
 }.inner-footer__content a:hover{background:#fff;color:#f5711e}.preloder{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:99999}
 .preloder__bar{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);height:1rem;width:30rem;background:#e9eef7}
-.preloder__track{display:block;height:1rem;width:15rem;background:#53cc99}.preloder__number{font-family:'Poppins',sans-serif;font-size:6rem;position:absolute;top:50%;left:50%;transform:translate(-50%,-70px);letter-spacing:-2px;font-weight:600;color:#53cc99}
+.preloder__track{display:block;height:1rem;width:0;background:#53cc99}.preloder__number{font-family:'Poppins',sans-serif;font-size:6rem;position:absolute;top:50%;left:50%;transform:translate(-50%,-70px);letter-spacing:-2px;font-weight:600;color:#53cc99}
 .main-heading{text-align:center;max-height:20rem}.main-heading h1{font-family:'Poppins',sans-serif;font-weight:700;text-transform:uppercase;font-size:12rem;color:#e9eef7;letter-spacing:-2px}
 @media(max-width:768px){.main-heading h1{font-size:8rem}}@media(max-width:575.98px){.main-heading h1{display:none}
 }.main-heading h3{font-weight:500;font-size:2rem;color:#4f78e0;transform:translateY(-8rem)}
