@@ -32,10 +32,14 @@
                 
                 <!-- service boxes -->
                 <?php get_template_part('template/home/service-box'); ?>
-                
+
+     
             </div>
 
         </div>
+
+        <!-- inner footer -->
+        <?php get_template_part('template/inner-footer'); ?>
 
     </div>
 </div>

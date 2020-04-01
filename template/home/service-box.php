@@ -76,14 +76,14 @@
                             <i class="fas fa-link"></i>
                         </a>
                     </li>
-                    <!-- Invitation SHEET -->
+                    <!-- Invitation e-learning -->
                     <li>
                         <div class="logo">
                             <img src="<?php echo get_template_directory_uri() ?>/asset/src/images/elearning-logo.png" alt="Invitaton English Coaching Centre">
                         </div>
                         <div class="details">
                             <h2>E-learning</h2>
-                            <p>Invitation Electronic Learning</p>
+                            <p>e-Learning</p>
                         </div>
                         <a class="link" href="#">
                             <i class="fas fa-link"></i>
