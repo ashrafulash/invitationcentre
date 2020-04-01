@@ -8,7 +8,10 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class() ?>>
- <?php require_once('include/inc_functions.php'); ?>
+
+<?php get_template_part('template/preloder'); ?>
+
+<?php require_once('include/inc_functions.php'); ?>
 <nav class="navbar-default" id="site-nav" role="navigation">
     <div class="row no-gutter mx-0">
         <div class="col-lg-4 col-md-3" id="d-none">

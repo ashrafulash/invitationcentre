@@ -1,6 +1,5 @@
 (function(){
 
-    alert('This website is under Development');
 
     function $(selector){
         return document.querySelector(selector);
@@ -73,7 +72,45 @@
         }
     }
     
-    
+/*-------------------------------------
+        preloder
+---------------------------------------*/
+
+var bar = $(".preloder__track");
+var preloder = $(".preloder");
+var number = $(".preloder__number")
+
+window.addEventListener('load', function(e){
+
+    var time = e.timeStamp;
+    if(time < 1000){
+        barmovement(1000);
+    }
+    else{
+        barmovement(time);
+    }
+
+    function barmovement(val){
+
+        var init = 0;
+        var hold = setInterval(function(){
+            init += 1;
+            if(init == 101){
+                clearInterval(hold);
+                setTimeout(function(){
+                    preloder.style.display = 'none';
+                },800);
+            }else{
+                number.innerText = init + '%';
+                bar.style.width = (init * 3) + 'px';
+            }
+
+        }, val / 300);
+
+    }
+
+})
+
 
 
 }());
