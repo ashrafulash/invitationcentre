@@ -3,6 +3,10 @@
     max-width: 180rem;
     background: $color-white;
 
+    @include small-desktop{
+        margin-top: 8rem;
+    }
+
     &__banner{
         padding: 20rem 10rem;
         background-size: cover;
