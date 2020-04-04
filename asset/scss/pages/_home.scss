@@ -39,7 +39,7 @@
                 width: 55vw;
             }
 
-           @include laptop{
+            @include laptop{
                 width: 65vw;
             }
 
@@ -50,7 +50,7 @@
 
             @include small-mobile{
                 width:100vw;
-             
+            
             }
 
         }

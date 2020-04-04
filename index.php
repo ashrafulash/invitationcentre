@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<?php get_template_part('template/preloder'); ?>
 <div class="row m-0 no-gutters">
     <div class="col-lg-3 sidebar-home" style="max-width:300px" id="sidebar-container">
         <?php get_template_part('template/sidebar') ?>
