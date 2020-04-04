@@ -7,6 +7,12 @@
         margin-top: 8rem;
     }
 
+    @include laptop{
+        margin-top: 6rem;
+    }
+
+
+
     &__banner{
         padding: 20rem 10rem;
         background-size: cover;
@@ -36,6 +42,7 @@
 
         .breadcrumbs{
             box-shadow: 0 5px 2rem rgba(#000, .1);
+            
         
         }
 
