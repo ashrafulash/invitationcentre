@@ -25,7 +25,7 @@ function invitation_enqueue_scripts(){
     // load css
     wp_enqueue_style('fontawesome', get_template_directory_uri() . '/asset/src/min-css/all.min.css', [], time(), 'all');
 
-     wp_enqueue_style('flaticon', get_template_directory_uri() . '/asset/src/flat-icon/flaticon.css', [], time(), 'all');
+    wp_enqueue_style('flaticon', get_template_directory_uri() . '/asset/src/flat-icon/flaticon.css', [], time(), 'all');
 
     
 
@@ -53,3 +53,22 @@ add_action('wp_enqueue_scripts', 'invitation_enqueue_scripts');
 register_nav_menus([
     'default-menu' => esc_html__('Default Menu', 'invitationcentre'),
 ]);
+
+
+// add widgets area
+function invitation_widgets_init(){
+    $args_sidebar_error = [
+        'name'          => esc_html__('404 Widget Area', 'invitationcentre'),
+        'description'   => esc_html__('Add widgets for error404 page', 'invitation centre'),
+        'id'            => 'error_widget_area',
+        'before_widget' => '<div class="error-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="error-widget__title">',
+        'after_title'   => '</h2>',
+    ];
+
+    register_sidebar($args_sidebar_error);
+
+}
+
+add_action( 'widgets_init', 'invitation_widgets_init' );

@@ -1,8 +1,11 @@
 .inner-footer{
     background: $color-white;
     max-width: 180rem;
-
     position: relative;
+
+    @include mobile{
+        display: none;
+    }
 
     &__content{
         position: absolute;
