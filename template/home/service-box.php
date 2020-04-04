@@ -12,7 +12,7 @@
                             <h2>IECC</h2>
                             <p>Invitation English Coaching Centre</p>
                         </div>
-                        <a class="link" href="#">
+                        <a class="link" href="<?php echo get_site_url(); ?>/iecc">
                             <i class="fas fa-link"></i>
                         </a>
                     </li>
@@ -25,7 +25,7 @@
                             <h2>IELTS</h2>
                             <p>Invitation IELTS Centre</p>
                         </div>
-                        <a class="link" href="#">
+                        <a class="link" href="<?php echo get_site_url(); ?>/ielts">
                             <i class="fas fa-link"></i>
                         </a>
                     </li>
@@ -46,7 +46,7 @@
                             <i class="fas fa-link"></i>
                         </a>
                     </li>
-                    <!-- Invitation SHEET -->
+                    <!-- Invitation day and night care -->
                     <li>
                         <div class="logo">
                             <img src="<?php echo get_template_directory_uri() ?>/asset/src/images/idnc-logo.png" alt="Invitaton English Coaching Centre">
@@ -55,7 +55,7 @@
                             <h2>IDNC</h2>
                             <p>Invitation day & Night Care</p>
                         </div>
-                        <a class="link" href="#">
+                        <a class="link" href="<?php echo get_site_url(); ?>/idnc">
                             <i class="fas fa-link"></i>
                         </a>
                     </li>
@@ -85,7 +85,7 @@
                             <h2>E-learning</h2>
                             <p>e-Learning</p>
                         </div>
-                        <a class="link" href="#">
+                        <a class="link" href="<?php echo get_site_url(); ?>/e-learning">
                             <i class="fas fa-link"></i>
                         </a>
                     </li>

@@ -11,38 +11,38 @@
                     </a>
                 </li>
                 <li class="result">
-                    <a href="#">
+                    <a href="<?php echo get_site_url(); ?>/result?active=result">
                         <i class="flaticon-list"></i>
                         <span>Result</span>
                     </a>
                 </li>
 
                 <li class="schedule">
-                    <a href="#">
+                    <a href="<?php echo get_site_url(); ?>/schedule?active=schedule">
                         <i class="flaticon-calendar"></i>
                         <span>Schedule</span>
                     </a>
                 </li>
                 <li class="about">
-                    <a href="#">
+                    <a href="<?php echo get_site_url(); ?>/about?active=about">
                         <i class="flaticon-info"></i>
                         <span>About</span>
                     </a>
                 </li>
                 <li class="admission">
-                    <a href="#">
+                    <a href="<?php echo get_site_url(); ?>/admission?active=admission">
                         <i class="flaticon-playlist"></i>
                         <span>Admission</span>
                     </a>
                 </li>
                 <li class="resources">
-                    <a href="#">
+                    <a href="<?php echo get_site_url(); ?>/resources?active=resources">
                         <i class="flaticon-server"></i>
                         <span>Resources</span>
                     </a>
                 </li>
                 <li class="contact">
-                    <a href="#">
+                    <a href="<?php echo get_site_url(); ?>/contact?active=contact">
                         <i class="flaticon-phone-contact"></i>
                         <span>Contact</span>
                     </a>
