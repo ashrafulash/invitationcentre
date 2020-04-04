@@ -30,7 +30,7 @@
                     </a>
                 </li>
                 <li class="admission">
-                    <a href="<?php echo get_site_url(); ?>/admission?active=admission">
+                    <a href="http://join.invitationcentre.com" target="_blank">
                         <i class="flaticon-playlist"></i>
                         <span>Admission</span>
                     </a>

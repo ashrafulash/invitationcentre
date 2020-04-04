@@ -15,7 +15,7 @@
                 repellendus ab dolore dolorem pariatur asperiores! Eum, qui dolorum saepe dicta sunt dolorem
                 ducimus illo illum recusandae sapiente voluptatem,</p>
 
-            <a class="btn contact-btn" href="#"><span>Contact Now</span> <i>&rarr;</i></a>
+            <a class="btn contact-btn" href="<?php echo get_site_url(); ?>/contact?active=contact"><span>Contact Now</span> <i>&rarr;</i></a>
         </div>
     </div>
 </div>

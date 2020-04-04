@@ -25,7 +25,7 @@
                             <h2>Our Mission & Vission</h2>
                             <p>Click Insert and then choose the elements you want from the different galleries. Themes and styles also help keep your </p>
                             <p>match your new theme. When you apply styles, your headings change to match the new theme. Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout </p>
-                            <a class="btn about-us" href="#"><span>About Us</span><i>&rarr;</i></a>
+                            <a class="btn about-us" href="<?php echo get_site_url(); ?>/about?active=about"><span>About Us</span><i>&rarr;</i></a>
                         </div>
                     </div>
                 </div>
