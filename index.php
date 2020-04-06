@@ -5,7 +5,7 @@
         <?php get_template_part('template/sidebar') ?>
 
     </div>
-    <div class="col-lg-9 mx-auto mb-5 maincontent" id="mx-100">
+    <div class="col-lg-9 mx-auto maincontent" id="mx-100">
         <!-- banner part -->
         <?php get_template_part('template/home/banner'); ?>
 

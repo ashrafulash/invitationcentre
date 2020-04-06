@@ -1,13 +1,12 @@
-<?php 
+<?php
 /*
-    Template Name: Single Homepage
+    Template Name: blog Template
 */
-
 ?>
 <?php get_header(); ?>
 <?php get_template_part('template/breadcrumb'); ?>
 <?php
-    $active = 'home';
+    $active = 'blog';
     if(isset($_GET['active'])){
         $active = $_GET['active'];
     }
@@ -19,14 +18,11 @@
 
     </div>
     <div class="col-lg-9 mx-auto maincontent page-default" id="mx-100">
+        <div class="blog_content">
+        
+        
+        </div>
 
-        <?php if(have_posts()) :  while(have_posts()) :  the_post();?>
-
-        <?php the_content('<div>', '</div>'); ?>
-
-        <?php endwhile; else : ?>
-            <h1>no post found</h1>
-        <?php endif; ?>
         <!-- inner footer -->
         <?php get_template_part('template/inner-footer'); ?>
 

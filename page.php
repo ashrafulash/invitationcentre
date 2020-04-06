@@ -12,7 +12,7 @@
         <?php get_template_part('template/sidebar'); ?>
 
     </div>
-    <div class="col-lg-9 mx-auto mb-5 maincontent page-default" id="mx-100">
+    <div class="col-lg-9 mx-auto maincontent page-default" id="mx-100">
 
         <?php if(have_posts()) :  while(have_posts()) :  the_post();?>
 
