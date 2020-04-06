@@ -34,6 +34,10 @@
                     margin-bottom: 1rem;
                 }
             }
+
+            @include mobile{
+                padding: 6rem 1rem; 
+            }
         }
 
         .inner-footer-widget{
@@ -49,6 +53,10 @@
 
                 @include laptop{
                     padding-bottom: 0rem;
+                }
+
+                @include mobile{
+                    font-size: 3rem;
                 }
             }
 

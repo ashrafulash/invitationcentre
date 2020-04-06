@@ -36,7 +36,7 @@
                     }
                 ?>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-12">
                 <?php
                     if( is_active_sidebar('inner-footer_widget_area_5')){
                         dynamic_sidebar( 'inner-footer_widget_area_5' );
