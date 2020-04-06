@@ -80,7 +80,7 @@ $arr_posts = new WP_Query( $args );
                                         </span>
                                         <h1 class="entry-title"><a href="<?php the_permalink( ) ?>"><?php the_title(); ?></a></h1>
                                     </header>
-                                    <?php if(! has_excerpt()): ?>
+                                    <?php if(has_excerpt()): ?>
                                     <div class="entry-content">
                                         <?php the_excerpt(10); ?>
                                         <a class="read_more btn" href="<?php the_permalink(); ?>">Read More</a>
