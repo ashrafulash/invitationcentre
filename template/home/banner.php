@@ -11,9 +11,7 @@
             ?>
             <h1><?php bloginfo('name'); ?></h1>
             <h2><?php bloginfo('description') ?></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus amet provident? Rerum, nam
-                repellendus ab dolore dolorem pariatur asperiores! Eum, qui dolorum saepe dicta sunt dolorem
-                ducimus illo illum recusandae sapiente voluptatem,</p>
+            <p>We believe in a strong relationship between a company and customers and so we are very careful about our services and our products. Your smile that comes from your heart is our satisfaction. Stay with us and believe in change.</p>
 
             <a class="btn contact-btn" href="<?php echo get_site_url(); ?>/contact?active=contact"><span>Contact Now</span> <i>&rarr;</i></a>
         </div>

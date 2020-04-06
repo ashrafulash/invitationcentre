@@ -1,14 +1,60 @@
+
 <div class="inner-footer">
-    <img class="w-100" src="<?php echo get_template_directory_uri() ?>/asset/src/images/footer_bg.png" alt="invitation centre footer">
+    <div class="inner-footer__top">
+        <div class="row mx-0 no-gutters">
+            <div class="col-lg-6 col-md-8">
+                    <div class="one">
+                        <?php
+                        if( is_active_sidebar('inner-footer_widget_area_1')){
+                            dynamic_sidebar( 'inner-footer_widget_area_1' );
+                        }
+                    ?>
+                    </div>
+            </div>
+            <div class="col-lg-6 col-md-4">
+                <?php
+                    if( is_active_sidebar('inner-footer_widget_area_2')){
+                        dynamic_sidebar( 'inner-footer_widget_area_2' );
+                    }
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="inner-footer__bottom">
+        <div class="row mx-0">
+            <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                <?php
+                    if( is_active_sidebar('inner-footer_widget_area_3')){
+                        dynamic_sidebar( 'inner-footer_widget_area_3' );
+                    }
+                ?>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                <?php
+                    if( is_active_sidebar('inner-footer_widget_area_4')){
+                        dynamic_sidebar( 'inner-footer_widget_area_4' );
+                    }
+                ?>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                <?php
+                    if( is_active_sidebar('inner-footer_widget_area_5')){
+                        dynamic_sidebar( 'inner-footer_widget_area_5' );
+                    }
+                ?>
+            </div>
+            <div class="col-lg-4 col-md-10 mt-md-4 col-sm-12 mt-sm-5">
+                <?php
+                    if( is_active_sidebar('inner-footer_widget_area_6')){
+                        dynamic_sidebar( 'inner-footer_widget_area_6' );
+                    }
+                ?>
+            </div>
+        </div>
+    </div>
 
-    <div class="inner-footer__content">
-        <h2>Thank you</h2>
-        <p>&copy; <?php echo date('Y') ?>, copyright contained by Invitation Centre</p>
-
-        <a href="https://www.facebook.com/invitation.iecc" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="mailto:invitationcentre.help@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-skype"></i></a>
+    <div class="copyright">
+        <p> &copy;copyright <span><?php echo date("Y") ?></span> contained by <span><?php bloginfo('name') ?></span>.</p>
     </div>
 
 </div>

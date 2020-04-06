@@ -23,8 +23,15 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="home-service__container__text">
                             <h2>Our Mission & Vission</h2>
-                            <p>Click Insert and then choose the elements you want from the different galleries. Themes and styles also help keep your </p>
-                            <p>match your new theme. When you apply styles, your headings change to match the new theme. Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout </p>
+                            <p>
+                            We, Invitation Centre ,are working in development of education of Bangladesh. We basically are woking with English language . we are providing the modern facilities to the students.
+                            </p>
+                            <p>
+                            With progress of the world we are updating our system . We believe in change ,and so we take potential initiative to adapt with the modern world . We hope withing 2025 ,we will have a school, a library ,a restaurant and Avoron (Online shop) etc. We have a plan to start a tour business and so  we will take necessary step when we feel to start.
+                            </p>
+                            <p>
+                            The Invitaion sports Centre that has good will in arranging games program is dreaming to arrange well organized sports program and social  activities.
+                            </p>
                             <a class="btn about-us" href="<?php echo get_site_url(); ?>/about?active=about"><span>About Us</span><i>&rarr;</i></a>
                         </div>
                     </div>
