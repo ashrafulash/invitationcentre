@@ -33,7 +33,6 @@ $arr_posts = new WP_Query( $args );
             if(has_post_thumbnail()){
                 $innerBg = get_the_post_thumbnail_url();
             }
-            
         ?>
 
         <div class="page-default__banner" style="background-image:url(<?php echo $innerBg; ?>)">

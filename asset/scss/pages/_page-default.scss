@@ -2,6 +2,7 @@
     margin-top: 14rem;
     max-width: 180rem;
     background: $color-white;
+    overflow-x: hidden;
 
     @include small-desktop{
         margin-top: 8rem;
