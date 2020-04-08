@@ -4,7 +4,7 @@
         <?php get_template_part('template/sidebar'); ?>
     </div>
     <div class="col-lg-9 mx-auto maincontent page-default" id="mx-100">
-        <?php if(have_posts()) : the_post(); ?>
+        <?php if(have_posts()) : the_post(); setPostViews(get_the_ID());?>
         <div class="single-page">
             <div class="single-page__banner">
                 <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
