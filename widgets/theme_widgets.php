@@ -87,6 +87,7 @@ function invitation_widgets_init(){
 
     register_sidebar($args_inner_footer_6);
 
+
 }
 
 add_action( 'widgets_init', 'invitation_widgets_init' );

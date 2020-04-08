@@ -10,8 +10,9 @@
                 <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 
                 <div class="single-page__banner__details">
-                    <span class="entry-date"><i class="far fa-clock"></i> <?php the_date(); ?></span>
-                    <span class="entry-date"><?php the_date(); ?></span>
+                    <span class="entry-date">
+                        <i class="far fa-clock"></i> <?php the_date(); ?>
+                    </span>
                     <span class="entry-category">
                         <i class="far fa-folder"></i>
                         <?php 
@@ -58,7 +59,14 @@
             </div>
         
         
-        <?php the_content('<div>', '</div>'); ?>
+        <div class="row">
+            <div class="col-lg-8 col-md-7">
+                <?php the_content('<div>', '</div>'); ?>
+            </div>
+            <div class="col-lg-4 col-md-5">
+                <?php get_template_part('template/recent', 'post') ?>
+            </div>
+        </div>
 
         <?php else : ?>
             <h1>no post found</h1>

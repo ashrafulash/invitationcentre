@@ -1,0 +1,54 @@
+.recent-post{
+    padding: 5rem 0 17rem 0;
+    border-left: 1px solid $color-bg;
+    &__title{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 600;
+        color: $color-green;
+        font-size: 3.4rem;
+        padding: 0 2rem;
+    }
+
+    @include tablet{
+        padding-bottom: 5rem;
+    }
+    article{
+        display: flex;
+        max-width: 60rem;
+        padding:2rem 2rem;
+        border-bottom: 1px solid $color-bg;
+        .image{
+            width: 30%;
+            .wp-post-image{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .recent-content{
+            width: 70%;
+            padding-left: 2rem;
+            span{
+                font-size: 1.2rem;
+                color: $primary-heading;
+                padding-right: 1rem;
+                padding-bottom: 3px;
+            }
+            a{
+                font-size: 14px;
+                color: #161616;
+                font-family: 'Rubik',sans-serif;
+                font-weight: 400;
+                line-height: 20px;
+                &:hover{
+                    color: $primary-main;
+                }
+
+                @include tablet{
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+            }
+        }
+    }
+}
