@@ -33,7 +33,7 @@
 
                             <div class="recent-content">
                                 <span class="entry-date">
-                                    <i class="far fa-clock"></i> <?php the_date(); ?>
+                                    <i class="far fa-clock"></i> <?php echo get_the_date(); ?>
                                 </span>
                                 <span class="entry-category">
                                     <i class="far fa-folder"></i>

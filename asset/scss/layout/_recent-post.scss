@@ -17,6 +17,7 @@
         max-width: 60rem;
         padding:2rem 2rem;
         border-bottom: 1px solid $color-bg;
+       
         .image{
             width: 30%;
             .wp-post-image{
@@ -48,6 +49,16 @@
                     line-height: 24px;
                 }
 
+            }
+        }
+        
+         @include mobile{
+            padding:2rem 1rem; 
+            .recent-content{
+                padding-left: 1rem !important;
+                span{
+                    margin-right: 5px !important;
+                }
             }
         }
     }
