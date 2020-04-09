@@ -20,9 +20,6 @@
         padding-bottom: 5rem;
         padding-left: 4rem;
     }
-    @include mobile{
-        padding-left: 2rem;
-    }
     article{
         display: flex;
         max-width: 60rem;
@@ -33,10 +30,11 @@
             width: 30%;
             .wp-post-image{
                 width: 100%;
-                height: auto;
-                @include mobile{
-                    width: 20%;
-                }
+                height: auto; 
+            }
+
+            @include mobile{
+                width: 20%;
             }
         }
         .recent-content{
