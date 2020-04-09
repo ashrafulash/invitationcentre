@@ -273,4 +273,30 @@
         color: $color-red;
     }
 
+    
+        .logged-in-as{
+            a:first-child{
+                color: #666
+            }
+            a:last-child{
+                color: red;
+                text-decoration: underline;
+            }
+        }
+
+        .comment-reply-title > a {
+            color: #23282D;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+        #cancel-comment-reply-link {
+            background: #EF4C6A;
+            color: #fff;
+            font-size: 14px;
+            font-family: 'Rubik',sans-serif;
+            padding: 5px 10px;
+            
+        }
+}
+
 }
