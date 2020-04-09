@@ -15,6 +15,7 @@
         @include tablet{
             transform: translateY(0);
             margin-bottom: 5rem;
+            box-shadow: 0;
         }
 
         iframe{
