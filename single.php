@@ -62,8 +62,17 @@
         <div class="row">
             <div class="col-lg-8 col-md-7">
                 <?php the_content('<div>', '</div>'); ?>
+
+                <?php if(!post_password_required()) :?>
+
+                    <div class="comment-template">
+                        <?php comments_template(); ?>
+                    </div>
+
+                <?php endif; ?>
+
             </div>
-            <div class="col-lg-4 col-md-5">
+            <div class="col-lg-4 col-md-5 rcent-l-border pl-0">
                 <?php get_template_part('template/recent', 'post') ?>
             </div>
         </div>

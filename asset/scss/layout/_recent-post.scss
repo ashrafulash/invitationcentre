@@ -1,38 +1,60 @@
+.rcent-l-border{
+    border-left: 1px solid $color-bg;
+
+}
 .recent-post{
     padding: 5rem 0 17rem 0;
-    border-left: 1px solid $color-bg;
     &__title{
         font-family: 'Poppins',sans-serif;
         font-weight: 600;
         color: $color-green;
         font-size: 3.4rem;
         padding: 0 2rem;
+
+        @include mobile{
+            padding: 0 1rem; 
+        }
     }
 
     @include tablet{
         padding-bottom: 5rem;
+        padding-left: 4rem;
+    }
+    @include mobile{
+        padding-left: 2rem;
     }
     article{
         display: flex;
         max-width: 60rem;
         padding:2rem 2rem;
         border-bottom: 1px solid $color-bg;
-       
+
         .image{
             width: 30%;
             .wp-post-image{
                 width: 100%;
                 height: auto;
+                @include mobile{
+                    width: 20%;
+                }
             }
         }
         .recent-content{
             width: 70%;
             padding-left: 2rem;
+
+            @include mobile{
+                    width: 80%;
+            }
             span{
                 font-size: 1.2rem;
                 color: $primary-heading;
                 padding-right: 1rem;
                 padding-bottom: 3px;
+
+                @include mobile{
+                    padding-right: 3px; 
+                }
             }
             a{
                 font-size: 14px;
