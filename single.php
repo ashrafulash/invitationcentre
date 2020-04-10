@@ -81,8 +81,6 @@
             <h1>no post found</h1>
         </div>
         <?php endif; ?>
-
-        
         <!-- inner footer -->
         <?php get_template_part('template/inner-footer'); ?>
 

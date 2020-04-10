@@ -5,9 +5,25 @@
 ?>
 
 <?php 
+Global $current_page;
+if ( get_query_var('paged') ) {
+
+    $current_page = get_query_var('paged');
+
+} elseif ( get_query_var('page') ) {
+// 'page' is used instead of 'paged' on Static Front Page
+$current_page = get_query_var('page');
+
+} else {
+
+    $current_page = 1;
+}
+
 $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
+    'paged' => $current_page,
+    
 );
 $arr_posts = new WP_Query( $args );
 ?>
@@ -42,6 +58,10 @@ $arr_posts = new WP_Query( $args );
             ?>
         </div>
         <?php endif; ?>
+        <!-- pagination -->
+        <div class="blog-pagination">
+            <?php get_template_part('template/pagination'); ?>
+        </div> 
     <div class="blog_content">
 
 
@@ -89,8 +109,7 @@ $arr_posts = new WP_Query( $args );
                             </article>
 
                         </div>
-                    
-                    
+                
                     <?php
                 endwhile;
                 ?> 
@@ -98,7 +117,6 @@ $arr_posts = new WP_Query( $args );
                 <?php endif; ?>
     
     </div>
-
 
         <!-- inner footer -->
         <?php get_template_part('template/inner-footer'); ?>

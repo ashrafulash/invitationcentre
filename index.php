@@ -44,7 +44,7 @@
             </div>
 
         </div>
-
+        <?php the_posts_pagination(); ?>
         <!-- inner footer -->
         <?php get_template_part('template/inner-footer'); ?>
 
