@@ -104,31 +104,6 @@ $(document).ready(()=>{
 
     })
 
-    anchor.on('click', (e)=>{
-        e.stopPropagation();
-        e.preventDefault();
-        pointer.css({
-            'mix-blend-mode' : 'normal',
-        })
-        pointer.animate({
-            'width': '5000px',
-            'height': '5000px',
-        }, function(){
-
-            setTimeout(()=>{
-
-                let trgt = e.target;
-                console.log($(trgt).attr('href'))
-                window.location.href = $(trgt).attr('href');
-
-            },1000)
-
-        });
-
-
-    })
-
-
 
 });
 
