@@ -80,9 +80,6 @@
 $(document).ready(()=>{
 
     let anchor = $('a');
-
-    console.log(anchor);
-
     $('body').prepend('<span class="pointer"></span>');
 
     let pointer = $('.pointer');
@@ -108,17 +105,23 @@ $(document).ready(()=>{
     })
 
     anchor.on('click', (e)=>{
+        e.stopPropagation();
         e.preventDefault();
         pointer.css({
             'mix-blend-mode' : 'normal',
         })
         pointer.animate({
-            'width': '4000px',
-            'height': '4000px',
+            'width': '5000px',
+            'height': '5000px',
         }, function(){
 
-            let trgt = e.target;
-            document.location.href = $(trgt).attr('href');
+            setTimeout(()=>{
+
+                let trgt = e.target;
+                console.log($(trgt).attr('href'))
+                window.location.href = $(trgt).attr('href');
+
+            },1000)
 
         });
 
