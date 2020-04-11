@@ -1,1 +1,135 @@
-!function(){function n(e){return document.querySelector(e)}var e=window.innerWidth,t=n(".sidebar-btn"),i=n(".sidebar-close"),r=n("#sidebar-default");n("#sidebar-container");e<1200&&(t.style.display="inline-block",i.style.display="inline-block");var l=!!r.dataset.expand;function a(){if(1==l){var e=-300,t=setInterval(function(){0==e?clearInterval(t):(e+=4,r.style.left=e+"px")},1);r.setAttribute("data-expand","false"),l=!1,n(".maincontent").style.filter="blur(7px)"}else if(0==l){r.style.left="-300px";e=0,t=setInterval(function(){-300==e?clearInterval(t):(e-=4,r.style.left=e+"px")},1);r.setAttribute("data-expand","true"),l=!0,n(".maincontent").style.filter="blur(0px)"}}t.addEventListener("click",function(){a()}),i.addEventListener("click",function(){a()});var d=n(".preloder__track"),s=n(".preloder"),c=n(".preloder__number");window.addEventListener("load",function(e){var t=e.timeStamp;function n(e){var t=0,n=setInterval(function(){101==(t+=1)?(clearInterval(n),setTimeout(function(){s.style.display="none"},800)):(c.innerText=t+"%",d.style.width=3*t+"px")},e/300)}n(t<1e3?1e3:t)})}();
+(function(){
+    function $(selector){
+        return document.querySelector(selector);
+    }
+
+    function $$(selector){
+        return document.querySelectorAll(selector);
+    }
+/*-------------------------------------
+        Sidebar Toggler
+---------------------------------------*/
+    var device_width = window.innerWidth;
+
+    var sidebar_btn = $(".sidebar-btn");
+    var sidebar_close = $(".sidebar-close");
+
+    var default_sidebar = $("#sidebar-default");
+
+    var sidebar_container = $("#sidebar-container");
+
+
+    if(device_width < 1200){
+        sidebar_btn.style.display = 'inline-block';
+        sidebar_close.style.display = 'inline-block';
+    }
+
+    var expand = !!default_sidebar.dataset.expand;
+
+
+    sidebar_btn.addEventListener('click', function(){
+        toggleNav();
+    });
+
+    sidebar_close.addEventListener('click', function(){
+        toggleNav();
+    })
+
+
+    function toggleNav(){
+        if(expand == true){
+            
+            var pos = -300;
+            var interval = setInterval(function(){
+                if(pos == 0){
+                    clearInterval(interval);
+                }else{
+                pos += 4;
+                    default_sidebar.style.left = pos + 'px';
+                }
+            }, 1);
+
+            default_sidebar.setAttribute('data-expand', 'false');
+            expand = false;
+            $(".maincontent").style.filter = 'blur(7px)';
+        }else if(expand == false){
+            default_sidebar.style.left = '-300px';
+            var pos = 0;
+            var interval = setInterval(function(){
+                if(pos == -300){
+                    clearInterval(interval);
+                }else{
+                pos -= 4;
+                    default_sidebar.style.left = pos + 'px';
+                }
+            }, 1);
+            
+            default_sidebar.setAttribute('data-expand', 'true');
+            expand = true;
+            $(".maincontent").style.filter = 'blur(0px)';
+        }
+    }
+    
+
+
+
+}());
+// -====================Pointer effect=======================================
+
+
+$(document).ready(()=>{
+
+    let anchor = $('a');
+
+    console.log(anchor);
+
+    $('body').prepend('<span class="pointer"></span>');
+
+    let pointer = $('.pointer');
+
+
+    $(document).on('mousemove', (e)=>{
+        
+        pointer.css({
+            'left' : e.pageX,
+            'top' : e.pageY,
+        });
+
+    })
+
+    anchor.hover(function(){
+        pointer.addClass('pointer-large');
+
+
+    }, function(){
+
+        pointer.removeClass('pointer-large');
+
+    })
+
+    anchor.on('click', (e)=>{
+        e.preventDefault();
+        pointer.css({
+            'mix-blend-mode' : 'normal',
+        })
+        pointer.animate({
+            'width': '4000px',
+            'height': '4000px',
+        }, function(){
+
+            let trgt = e.target;
+            document.location.href = $(trgt).attr('href');
+
+        });
+
+
+    })
+
+
+
+});
+
+
+/*-------------------------------------
+        preloder
+---------------------------------------*/

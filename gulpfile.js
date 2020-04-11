@@ -23,15 +23,9 @@ function sass_cimpiler() {
     
 }
 
-function script(){
-    return src('asset/js/*.js')
-    .pipe(uglify())
-    .pipe(dest('asset/src/min-js'));
-}
 
 exports.watch = function() {
 watch('asset/scss/*.scss', sass_cimpiler );
-watch('asset/js/*.js', script );
 watch('asset/scss/**/_*.scss', sass_cimpiler);
 
 };

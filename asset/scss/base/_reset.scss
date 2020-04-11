@@ -19,6 +19,17 @@ body{
     font-family: 'Rubik', sans-serif;
     line-height: 2.4rem;
     overflow-x: hidden;
+    cursor: none;
+    a{
+        cursor: none !important;
+    }
+}
+
+.error404{
+    cursor: pointer;
+    a{
+        cursor: pointer !important;
+    }
 }
 
 body::-webkit-scrollbar {
@@ -69,4 +80,29 @@ a,span,i{
     @include large-tablet{
         display: none;
     }
+}
+
+
+.pointer{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $color-red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+    transition: width .3s, height .3s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    
+}
+
+.pointer-large{
+    width: 60px;
+    height: 60px;
+    border: 1px dashed $color-red;
+    box-sizing: content-box	;
+
 }

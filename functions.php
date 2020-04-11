@@ -38,6 +38,8 @@ function invitation_enqueue_scripts(){
     // load script
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/asset/src/min-js/jquery-3.4.1.slim.min.js', array (), time(), true);
 
+    wp_enqueue_script( 'jquery-old', get_template_directory_uri() . '/asset/src/min-js/jquery-1.12.4.min.js', array (), time(), true);
+
     wp_enqueue_script( 'popper', get_template_directory_uri() . '/asset/src/min-js/popper.min.js', array (), time(), true);
 
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/asset/src/min-js/bootstrap.min.js', array (), time(), true);
@@ -84,6 +86,7 @@ function setPostViews($postID) {
 }
 // Remove issues with prefetching adding extra views
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
 
 // add navigation
 register_nav_menus([
