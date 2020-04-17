@@ -81,10 +81,7 @@ $(document).ready(()=>{
 
     let anchor = $('a');
     $('body').prepend('<span class="pointer"></span>');
-
     let pointer = $('.pointer');
-
-
     $(document).on('mousemove', (e)=>{
         
         pointer.css({
@@ -92,17 +89,15 @@ $(document).ready(()=>{
             'top' : e.pageY,
         });
 
-    })
+    });
 
     anchor.hover(function(){
         pointer.addClass('pointer-large');
-
-
     }, function(){
-
         pointer.removeClass('pointer-large');
+    });
 
-    })
+
 
 
 });

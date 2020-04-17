@@ -16,6 +16,12 @@
                         <span>Result</span>
                     </a>
                 </li>
+                <li class="exam-hall">
+                    <a href="<?php echo get_site_url(); ?>/exam-hall?active=result">
+                        <i class="fas fa-diagnoses"></i>
+                        <span>Exam Hall</span>
+                    </a>
+                </li>
 
                 <li class="schedule">
                     <a href="<?php echo get_site_url(); ?>/schedule?active=schedule">
