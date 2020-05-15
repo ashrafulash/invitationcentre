@@ -1,0 +1,97 @@
+.invResult{
+    background: #fff;
+    &__header{
+        background: linear-gradient(180deg, #b493f2 0%, #643df4 100%) !important;
+        padding: 20px 40px !important;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        @include tablet{
+            padding: 20px 10px !important;
+        }
+        li{
+            font-size: 16px  !important;
+            border: 0 !important;
+            padding: 0 15px !important;
+            @include mobile{
+                font-weight: normal;
+            }
+        }
+    }
+    &__item{
+        display: flex;
+        font-family: 'Poppins',sans-serif;
+        padding: 0px 40px;
+        text-align: center;
+        margin-bottom: 0;
+        border-bottom: 1px solid #f9f9f9;
+        @include mobile{
+            border-bottom: 2px solid #f9f9f9;
+        }
+        @include tablet{
+            padding: 0px 10px;
+        }
+
+        @include mobile{
+            flex-wrap: wrap;
+            li{
+                padding:10px 10px !important;
+                justify-content: start !important;
+            }
+        }
+        
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            border-right: 2px solid #f9f9f9;
+            padding: 15px 15px;
+
+            @include mobile{
+                border-right: 0;
+            }
+
+            &:last-child{
+                border-right: 0;
+            }
+        }
+
+        &__rank{
+            justify-content: start !important;
+            font-weight: bold;
+            font-size: 16px;
+            width: 100px;
+            @include tablet{
+                width: 60px;
+            }
+        }
+        &__name{
+            justify-content: start !important;
+            width: 60%;
+            img{
+                width: 40px;
+                margin-right: 15px;
+            }
+
+            @include mobile{
+                width: 70%;
+            }
+        }
+        &__class{
+            width: 15%;
+            @include mobile{
+                width: 119px;
+            }
+        }
+
+        &__result{
+            font-size: 24px !important;
+            width: 15%;
+            @include mobile{
+                font-weight: bold;
+            }
+        }
+        
+    }
+}
