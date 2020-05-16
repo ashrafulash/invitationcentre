@@ -124,9 +124,11 @@ class ElementorCustomElement
 			}
         }
 
-        //add create widget 
+        //add custom elementor widget 
         registerWidget('/lib/create-widget.php');
         registerWidget('/lib/Result.widget.php');
+        registerWidget('/lib/paragraph_question.widget.php');
+        registerWidget('/lib/question_header.widget.php');
 
 			
 		}

@@ -81,9 +81,6 @@ class Result extends Widget_base{
 		);
 
 
-
-
-
 		$this->add_control(
 			'list',
 			[
@@ -101,15 +98,6 @@ class Result extends Widget_base{
 				'title_field' => '{{{ result_ranking }}}',
 			]
 		);
-
-
-		
-
-
-
-
-
-
 
 
         $this->end_controls_section();
@@ -196,8 +184,6 @@ class Result extends Widget_base{
 		<# } #>
 		<?php
 	}
-
-
 
 
 }
