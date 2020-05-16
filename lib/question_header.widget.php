@@ -11,7 +11,7 @@ class Question_header extends Widget_base{
     }
 
 	public function get_icon() {
-        return 'fas fa-parking';
+        return 'fas fa-heading';
     }
 
 	public function get_categories() {
