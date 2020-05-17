@@ -124,7 +124,7 @@ class Question_header extends Widget_base{
             <div class="invHeader">
                 <h1 class="invHeader__institution">{{{settings.institution}}}</h1>
                 <h4 class="invHeader__subject">{{{settings.subject}}}</h4>
-                <h4 class="invHeader__class">{{{settings.date}}}</h4>
+                <h4 class="invHeader__class">{{{settings.class}}}</h4>
                 <div class="invHeader__meta">
                     <span>Time : {{{settings.time}}}</span>
                     <span>Date : {{{settings.date}}}</span>
