@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li class="admission">
-                    <a href="http://join.invitationcentre.com" target="_blank">
+                    <a href="http://www.iquery.invitationcentre.com">
                         <i class="flaticon-playlist"></i>
                         <span>Admission</span>
                     </a>
